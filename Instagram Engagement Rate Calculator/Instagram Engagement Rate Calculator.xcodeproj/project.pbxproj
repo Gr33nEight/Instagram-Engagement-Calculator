@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		916E9F40277F1C1000135A52 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F3F277F1C1000135A52 /* SignUpView.swift */; };
+		916E9F43277F253000135A52 /* GlobalStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F42277F253000135A52 /* GlobalStuff.swift */; };
+		916E9F46277F267C00135A52 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F45277F267C00135A52 /* CustomTextField.swift */; };
+		916E9F48277F269300135A52 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F47277F269300135A52 /* CustomSecureField.swift */; };
+		916E9F4A277F2CB100135A52 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F49277F2CB100135A52 /* SignInView.swift */; };
+		916E9F4C277F2DAD00135A52 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F4B277F2DAD00135A52 /* AuthViewModel.swift */; };
+		916E9F50277F341D00135A52 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 916E9F4F277F341D00135A52 /* FirebaseAuth */; };
+		916E9F52277F341D00135A52 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 916E9F51277F341D00135A52 /* FirebaseFirestore */; };
+		916E9F54277F341D00135A52 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 916E9F53277F341D00135A52 /* FirebaseFirestoreSwift-Beta */; };
+		916E9F56277F341D00135A52 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 916E9F55277F341D00135A52 /* FirebaseStorage */; };
+		916E9F59277F486900135A52 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 916E9F58277F486900135A52 /* SwiftProtobuf */; };
+		916E9F5B277F486900135A52 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 916E9F5A277F486900135A52 /* SwiftProtobufPluginLibrary */; };
+		916E9F5D277F777C00135A52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 916E9F5C277F777A00135A52 /* GoogleService-Info.plist */; };
+		916E9F5F277F78BA00135A52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F5E277F78B900135A52 /* User.swift */; };
+		916E9F61277F78FC00135A52 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F60277F78FC00135A52 /* CurrentUser.swift */; };
+		916E9F632780B6EB00135A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916E9F622780B6EA00135A52 /* Assets.xcassets */; };
+		916E9F652780CD9D00135A52 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E9F642780CD9D00135A52 /* ProfileViewModel.swift */; };
+		917778442782607A0096253E /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917778432782607A0096253E /* StoreManager.swift */; };
+		91777846278270550096253E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91777845278270550096253E /* StoreKit.framework */; };
+		91C56E672785E4D90011744F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C56E662785E4D80011744F /* MainView.swift */; };
+		91C56E692785E4E80011744F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C56E682785E4E80011744F /* ProfileView.swift */; };
+		91C56E6B2785E5100011744F /* CurrentUserProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C56E6A2785E5100011744F /* CurrentUserProfileSettings.swift */; };
+		91C56E6D27864F0E0011744F /* BuyPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C56E6C27864F0D0011744F /* BuyPointsView.swift */; };
+		91CE2FCA277E0C0300C25566 /* Instagram_Engagement_Rate_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2FC9277E0C0300C25566 /* Instagram_Engagement_Rate_CalculatorApp.swift */; };
+		91CE2FCC277E0C0300C25566 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE2FCB277E0C0300C25566 /* ContentView.swift */; };
+		91CE2FD1277E0C0700C25566 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CE2FD0277E0C0700C25566 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		916E9F3F277F1C1000135A52 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		916E9F42277F253000135A52 /* GlobalStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStuff.swift; sourceTree = "<group>"; };
+		916E9F45277F267C00135A52 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		916E9F47277F269300135A52 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		916E9F49277F2CB100135A52 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		916E9F4B277F2DAD00135A52 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		916E9F5C277F777A00135A52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		916E9F5E277F78B900135A52 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		916E9F60277F78FC00135A52 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		916E9F622780B6EA00135A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Instagram Engagement Rate Calculator/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		916E9F642780CD9D00135A52 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		917778432782607A0096253E /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		91777845278270550096253E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		91C56E662785E4D80011744F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		91C56E682785E4E80011744F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		91C56E6A2785E5100011744F /* CurrentUserProfileSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileSettings.swift; sourceTree = "<group>"; };
+		91C56E6C27864F0D0011744F /* BuyPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyPointsView.swift; sourceTree = "<group>"; };
+		91CE2FC6277E0C0300C25566 /* Instagram Engagement Rate Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram Engagement Rate Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CE2FC9277E0C0300C25566 /* Instagram_Engagement_Rate_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_Engagement_Rate_CalculatorApp.swift; sourceTree = "<group>"; };
+		91CE2FCB277E0C0300C25566 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		91CE2FD0277E0C0700C25566 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91CE2FDB277E0CCB00C25566 /* Instagram-Engagement-Rate-Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Instagram-Engagement-Rate-Calculator-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91CE2FC3277E0C0300C25566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916E9F5B277F486900135A52 /* SwiftProtobufPluginLibrary in Frameworks */,
+				91777846278270550096253E /* StoreKit.framework in Frameworks */,
+				916E9F54277F341D00135A52 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				916E9F56277F341D00135A52 /* FirebaseStorage in Frameworks */,
+				916E9F50277F341D00135A52 /* FirebaseAuth in Frameworks */,
+				916E9F59277F486900135A52 /* SwiftProtobuf in Frameworks */,
+				916E9F52277F341D00135A52 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		916E9F44277F266400135A52 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				916E9F42277F253000135A52 /* GlobalStuff.swift */,
+				916E9F45277F267C00135A52 /* CustomTextField.swift */,
+				916E9F47277F269300135A52 /* CustomSecureField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		917778402782604A0096253E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91777845278270550096253E /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91CE2FBD277E0C0300C25566 = {
+			isa = PBXGroup;
+			children = (
+				91CE2FC8277E0C0300C25566 /* Instagram Engagement Rate Calculator */,
+				91CE2FC7277E0C0300C25566 /* Products */,
+				917778402782604A0096253E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91CE2FC7277E0C0300C25566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91CE2FC6277E0C0300C25566 /* Instagram Engagement Rate Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91CE2FC8277E0C0300C25566 /* Instagram Engagement Rate Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				916E9F5C277F777A00135A52 /* GoogleService-Info.plist */,
+				91CE2FDB277E0CCB00C25566 /* Instagram-Engagement-Rate-Calculator-Info.plist */,
+				916E9F44277F266400135A52 /* Utils */,
+				91CE2FD9277E0C5B00C25566 /* Models */,
+				91CE2FD8277E0C4E00C25566 /* ViewModels */,
+				91CE2FD7277E0C4400C25566 /* Views */,
+				91CE2FC9277E0C0300C25566 /* Instagram_Engagement_Rate_CalculatorApp.swift */,
+				91CE2FCB277E0C0300C25566 /* ContentView.swift */,
+				916E9F622780B6EA00135A52 /* Assets.xcassets */,
+				91CE2FCF277E0C0700C25566 /* Preview Content */,
+			);
+			path = "Instagram Engagement Rate Calculator";
+			sourceTree = "<group>";
+		};
+		91CE2FCF277E0C0700C25566 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				91CE2FD0277E0C0700C25566 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		91CE2FD7277E0C4400C25566 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91CE2FDA277E0C6300C25566 /* Authentication */,
+				91C56E662785E4D80011744F /* MainView.swift */,
+				91C56E682785E4E80011744F /* ProfileView.swift */,
+				91C56E6A2785E5100011744F /* CurrentUserProfileSettings.swift */,
+				91C56E6C27864F0D0011744F /* BuyPointsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91CE2FD8277E0C4E00C25566 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				917778432782607A0096253E /* StoreManager.swift */,
+				916E9F4B277F2DAD00135A52 /* AuthViewModel.swift */,
+				916E9F642780CD9D00135A52 /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91CE2FD9277E0C5B00C25566 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				916E9F5E277F78B900135A52 /* User.swift */,
+				916E9F60277F78FC00135A52 /* CurrentUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91CE2FDA277E0C6300C25566 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				916E9F3F277F1C1000135A52 /* SignUpView.swift */,
+				916E9F49277F2CB100135A52 /* SignInView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91CE2FC5277E0C0300C25566 /* Instagram Engagement Rate Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91CE2FD4277E0C0700C25566 /* Build configuration list for PBXNativeTarget "Instagram Engagement Rate Calculator" */;
+			buildPhases = (
+				91CE2FC2277E0C0300C25566 /* Sources */,
+				91CE2FC3277E0C0300C25566 /* Frameworks */,
+				91CE2FC4277E0C0300C25566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Instagram Engagement Rate Calculator";
+			packageProductDependencies = (
+				916E9F4F277F341D00135A52 /* FirebaseAuth */,
+				916E9F51277F341D00135A52 /* FirebaseFirestore */,
+				916E9F53277F341D00135A52 /* FirebaseFirestoreSwift-Beta */,
+				916E9F55277F341D00135A52 /* FirebaseStorage */,
+				916E9F58277F486900135A52 /* SwiftProtobuf */,
+				916E9F5A277F486900135A52 /* SwiftProtobufPluginLibrary */,
+			);
+			productName = "Instagram Engagement Rate Calculator";
+			productReference = 91CE2FC6277E0C0300C25566 /* Instagram Engagement Rate Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91CE2FBE277E0C0300C25566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					91CE2FC5277E0C0300C25566 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 91CE2FC1277E0C0300C25566 /* Build configuration list for PBXProject "Instagram Engagement Rate Calculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91CE2FBD277E0C0300C25566;
+			packageReferences = (
+				916E9F4E277F341C00135A52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				916E9F57277F486900135A52 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			productRefGroup = 91CE2FC7277E0C0300C25566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91CE2FC5277E0C0300C25566 /* Instagram Engagement Rate Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91CE2FC4277E0C0300C25566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CE2FD1277E0C0700C25566 /* Preview Assets.xcassets in Resources */,
+				916E9F632780B6EB00135A52 /* Assets.xcassets in Resources */,
+				916E9F5D277F777C00135A52 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91CE2FC2277E0C0300C25566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916E9F61277F78FC00135A52 /* CurrentUser.swift in Sources */,
+				91C56E672785E4D90011744F /* MainView.swift in Sources */,
+				916E9F40277F1C1000135A52 /* SignUpView.swift in Sources */,
+				916E9F4A277F2CB100135A52 /* SignInView.swift in Sources */,
+				91C56E6B2785E5100011744F /* CurrentUserProfileSettings.swift in Sources */,
+				916E9F43277F253000135A52 /* GlobalStuff.swift in Sources */,
+				91C56E6D27864F0E0011744F /* BuyPointsView.swift in Sources */,
+				91CE2FCC277E0C0300C25566 /* ContentView.swift in Sources */,
+				916E9F4C277F2DAD00135A52 /* AuthViewModel.swift in Sources */,
+				916E9F5F277F78BA00135A52 /* User.swift in Sources */,
+				916E9F652780CD9D00135A52 /* ProfileViewModel.swift in Sources */,
+				91CE2FCA277E0C0300C25566 /* Instagram_Engagement_Rate_CalculatorApp.swift in Sources */,
+				917778442782607A0096253E /* StoreManager.swift in Sources */,
+				916E9F48277F269300135A52 /* CustomSecureField.swift in Sources */,
+				91C56E692785E4E80011744F /* ProfileView.swift in Sources */,
+				916E9F46277F267C00135A52 /* CustomTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		91CE2FD2277E0C0700C25566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91CE2FD3277E0C0700C25566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91CE2FD5277E0C0700C25566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Instagram Engagement Rate Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = B8M8XKJ24C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Instagram-Engagement-Rate-Calculator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dapur Tool";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fikri.hidayat.Instagram-Engagement-Rate-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		91CE2FD6277E0C0700C25566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Instagram Engagement Rate Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = B8M8XKJ24C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Instagram-Engagement-Rate-Calculator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dapur Tool";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fikri.hidayat.Instagram-Engagement-Rate-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91CE2FC1277E0C0300C25566 /* Build configuration list for PBXProject "Instagram Engagement Rate Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91CE2FD2277E0C0700C25566 /* Debug */,
+				91CE2FD3277E0C0700C25566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91CE2FD4277E0C0700C25566 /* Build configuration list for PBXNativeTarget "Instagram Engagement Rate Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91CE2FD5277E0C0700C25566 /* Debug */,
+				91CE2FD6277E0C0700C25566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		916E9F4E277F341C00135A52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		916E9F57277F486900135A52 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		916E9F4F277F341D00135A52 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916E9F4E277F341C00135A52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		916E9F51277F341D00135A52 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916E9F4E277F341C00135A52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		916E9F53277F341D00135A52 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916E9F4E277F341C00135A52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		916E9F55277F341D00135A52 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916E9F4E277F341C00135A52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		916E9F58277F486900135A52 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916E9F57277F486900135A52 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		916E9F5A277F486900135A52 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916E9F57277F486900135A52 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 91CE2FBE277E0C0300C25566 /* Project object */;
+}
